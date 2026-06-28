@@ -6,3 +6,7 @@ public interface IEstudianteRepository : IRepository<Estudiante>
 {
 	Task<Estudiante?> GetByMatriculaAsync(string matricula);
 }
+
+public interface IRepository<T>
+{
+}

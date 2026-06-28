@@ -1,7 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 using LP3.Blazor.Domain.Constants;
 using LP3.Blazor.Domain.Enums;
-using static LP3.Blazor.Domain.Constants.ReglasDominio;
 
 public class EstudianteFormDto
 {

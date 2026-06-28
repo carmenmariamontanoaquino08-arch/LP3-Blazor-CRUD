@@ -5,7 +5,7 @@ using LP3.Blazor.Domain.Entities;
 namespace LP3.Blazor.Application.Data;
 
 public class ApplicationDbContext
-    : IdentityDbContext<ApplicationUser>
+    : IdentityDbContext<ApplicationContext>, IEquatable<ApplicationDbContext>
 {
     public ApplicationDbContext(
         DbContextOptions<ApplicationDbContext> options)
@@ -18,4 +18,13 @@ public class ApplicationDbContext
     public DbSet<Curso> Cursos => Set<Curso>();
 
     public DbSet<Matriculacion> Matriculaciones => Set<Matriculacion>();
+
+    public bool Equals(ApplicationDbContext other)
+    {
+        throw new NotImplementedException();
+    }
+}
+
+public class ApplicationContext
+{
 }
