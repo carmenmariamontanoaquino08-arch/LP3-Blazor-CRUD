@@ -13,10 +13,7 @@ public class Estudiante
     public DateTime FechaIngreso { get; set; }
 
     // ── Estado usando un Enum (lo veremos más adelante) ───
-    public Enums.EstadoEstudiante.Estado{
-        get { return Enums.EstadoEstudiante.Activo; }
-        set { }
-    }
+    public Enums.EstadoEstudiante.Estado{ get; set; } = Enums.EstadoEstudiante.Activo;
 
     // ── Auditoría ─────────────────────────────────────────
     public DateTime CreadoEn    { get; set; } = DateTime.UtcNow;

@@ -1,7 +1,7 @@
-using LP3.BlazorServer.Domain.Entities;
+using LP3.Blazor.Domain.Entities;
 
-namespace LP3.BlazorServer.Data.Repositories;
-
+namespace LP3.Blazor.Data.Repositories
+{
 public interface ICursoRepository
 {
     Task<ICollection<Curso>> GetAll();
@@ -9,4 +9,5 @@ public interface ICursoRepository
     Task Add(Curso curso);
     Task Update(Curso curso);
     Task Delete(int id);
+}
 }

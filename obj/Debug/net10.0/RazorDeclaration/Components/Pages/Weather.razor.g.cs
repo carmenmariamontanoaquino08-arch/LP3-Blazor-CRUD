@@ -78,6 +78,18 @@ using LP3.Blazor.Components.Layout
 
 #nullable disable
     ;
+#nullable restore
+#line (12,2)-(12,30) "c:\LP3\LP3.Blazor\Components\_Imports.razor"
+using LP3.Blazor.Shared.DTOs
+
+#nullable disable
+    ;
+#nullable restore
+#line (13,2)-(13,39) "c:\LP3\LP3.Blazor\Components\_Imports.razor"
+using LP3.Blazor.Application.Services
+
+#nullable disable
+    ;
     #line default
     #line hidden
 #nullable restore

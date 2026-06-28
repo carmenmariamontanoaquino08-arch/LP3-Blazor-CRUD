@@ -7,4 +7,6 @@ public class CusoDto
     public string Nombre   { get; set; } = string.Empty;
     public string Apellido { get; set; } = string.Empty;
     public string Matricula { get; set; } = string.Empty;
-    public string Estado   { get; set; } = string.Empty;
+    public string Estado { get; set; } = string.Empty;
+}
+

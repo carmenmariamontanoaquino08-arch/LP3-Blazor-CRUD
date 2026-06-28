@@ -85,8 +85,8 @@ using LP3.Blazor.Shared.DTOs
 #nullable disable
     ;
 #nullable restore
-#line (5,2)-(5,38) "c:\LP3\LP3.Blazor\Components\Pages\Estudiantes.razor"
-using LP3Blazor.Application.Services
+#line (5,2)-(5,39) "c:\LP3\LP3.Blazor\Components\Pages\Estudiantes.razor"
+using LP3.Blazor.Application.Services
 
 #nullable disable
     ;

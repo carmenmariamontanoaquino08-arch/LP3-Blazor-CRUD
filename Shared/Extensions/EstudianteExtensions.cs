@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using LP3.Blazor.Domain.Entities;
+using P3.Blazor.Data;
 
 namespace LP3.Blazor.Data.Repositories;
 
