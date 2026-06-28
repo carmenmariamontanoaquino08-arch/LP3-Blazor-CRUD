@@ -1,0 +1,5 @@
+bind/
+obj/
+*.db
+*.db-wal 
+.vs/
