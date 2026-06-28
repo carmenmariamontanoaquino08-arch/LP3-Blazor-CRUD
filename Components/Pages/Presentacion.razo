@@ -1,0 +1,14 @@
+@page "/presentacion"
+<PageTitle>Presentación - Programación III</PageTitle>
+
+<div class="container mt-5 text-center">
+    <h1>Universidad [Universidad Tecnológica del Cibao Oriental (UTECO)]</h1>
+    <h2>Asignatura: Programación III</h2>
+    <hr />
+    <h3>Tarea: Proyecto CRUD con Blazor Server</h3>
+    <br />
+    <p><b>Estudiante:</b> [Carmen María Montaño Aquino]</p>
+    <p><b>Matrícula:</b> [2015-0711]</p>
+    <p><b>Profesor:</b> [Felix Benzan]</p>
+    <p><b>Fecha:</b> 29 de junio 2026</p>
+</div>

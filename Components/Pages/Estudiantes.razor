@@ -1,0 +1,107 @@
+@page "/estudiantes"
+@rendermode InteractiveServer
+
+@using LP3.Blazor.Shared.DTOs
+@using LP3.Blazor.Application.Services
+
+@inject IEstudianteService EstudianteService
+
+<h3>Gestión de Estudiantes</h3>
+
+@if (!string.IsNullOrEmpty(mensaje))
+{
+    <div class="alert alert-info">@mensaje</div>
+}
+
+<EditForm Model="nuevoEstudiante" OnValidSubmit="Guardar">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <div class="mb-3">
+        <label>Nombre</label>
+        <InputText class="form-control" @bind-Value="nuevoEstudiante.Nombre" />
+    </div>
+
+    <div class="mb-3">
+        <label>Apellido</label>
+        <InputText class="form-control" @bind-Value="nuevoEstudiante.Apellido" />
+    </div>
+
+    <div class="mb-3">
+        <label>Matrícula</label>
+        <InputText class="form-control" @bind-Value="nuevoEstudiante.Matricula" />
+    </div>
+
+    <button class="btn btn-primary" type="submit">
+        Guardar
+    </button>
+</EditForm>
+
+<hr />
+
+<h4>Lista de estudiantes</h4>
+
+@if (estudiantes.Count == 0)
+{
+    <p>No hay estudiantes registrados.</p>
+}
+else
+{
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Matrícula</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            @foreach (var estudiante in estudiantes)
+            {
+                <tr>
+                    <td>@estudiante.Id</td>
+                    <td>@estudiante.Nombre</td>
+                    <td>@estudiante.Apellido</td>
+                    <td>@estudiante.Matricula</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+
+    private ICollection<EstudianteDto> estudiantes = new List<EstudianteDto>();
+
+    private EstudianteDto nuevoEstudiante = new();
+
+    private string mensaje = "";
+
+    protected override async Task OnInitializedAsync()
+    {
+        await Cargar();
+    }
+
+    private async Task Cargar()
+    {
+        estudiantes = await EstudianteService.GetAll();
+    }
+
+    private async Task Guardar()
+    {
+        var resultado = await EstudianteService.CreateAsync(nuevoEstudiante);
+
+        if (resultado)
+        {
+            mensaje = "Estudiante registrado correctamente.";
+            nuevoEstudiante = new EstudianteDto();
+            await Cargar();
+        }
+        else
+        {
+            mensaje = "No fue posible registrar el estudiante.";
+        }
+    }
+}

@@ -1,0 +1,9 @@
+C:\LP3\LP3.Blazor\obj\Debug\net10.0\EmbeddedAttribute.cs
+C:\LP3\LP3.Blazor\obj\Debug\net10.0\ValidatableTypeAttribute.cs
+C:\LP3\LP3.Blazor\obj\Debug\net10.0\LP3.Blazor.csproj.AssemblyReference.cache
+C:\LP3\LP3.Blazor\obj\Debug\net10.0\rpswa.dswa.cache.json
+C:\LP3\LP3.Blazor\obj\Debug\net10.0\LP3.Blazor.GeneratedMSBuildEditorConfig.editorconfig
+C:\LP3\LP3.Blazor\obj\Debug\net10.0\LP3.Blazor.AssemblyInfoInputs.cache
+C:\LP3\LP3.Blazor\obj\Debug\net10.0\LP3.Blazor.AssemblyInfo.cs
+C:\LP3\LP3.Blazor\obj\Debug\net10.0\LP3.Blazor.csproj.CoreCompileInputs.cache
+C:\LP3\LP3.Blazor\obj\Debug\net10.0\LP3.Blazor.MvcApplicationPartsAssemblyInfo.cache
